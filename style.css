@@ -1,0 +1,57 @@
+@keyframes colorful {
+    0% {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px rgba(27, 30, 227, 0.9);
+            
+            }
+        
+            100% {
+                box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.9);
+            }
+    }
+
+
+body {
+    background-color: dimgrey;
+    background-image:url(https://www.europarl.europa.eu/resources/library/images/20230607PHT95601/20230607PHT95601_original.jpg) ;
+}
+#submit-button{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background-color: rgb(52, 96, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    transition: 0.2s ;
+    animation-name: colorful;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+#input-text {
+    padding: 1rem 2rem;
+    margin-bottom: 12px;
+    width: 100% ;
+    border: none;
+    border-radius: 5px;
+    animation-name: colorful;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh ;
+}
+#submit-button:hover{
+    background-color: black;
+}
+
+.e3 {
+    display: flex;
+}
